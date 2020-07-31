@@ -1,4 +1,4 @@
-This program will capture pronunciation of each word, then create two files: <word>.wav and <word>.txt files for input to train a custom speech model.
+This program will capture pronunciation of each word, then creates two files: <word>.wav and <word>.txt files for input to train a custom speech model.
 
 The .wav file is 16K Hz
 
