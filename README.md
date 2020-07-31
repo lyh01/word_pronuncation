@@ -1,4 +1,4 @@
-This program will capture pronunciation of each word, then creates two files: \<word\>.wav (16K Hz) and \<word\>.txt files for input to train a custom speech model.
+This program will capture pronunciation of each word, then creates two files: \<word\>.wav (16K Hz) and \<word\>.txt for input to train a custom speech model.
 
 Create a list of words to be pronounced, one word per line.<br>
 To run the script: python ./speech-recognizer.py \<name of word list\>
