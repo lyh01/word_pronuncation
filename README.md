@@ -2,19 +2,19 @@ This program will capture pronunciation of each word, then creates two files: <w
 
 The .wav file is 16K Hz
 
-Create a list of words to be pronounced, one word per line.
+Create a list of words to be pronounced, one word per line.<br>
 To run the script: python ./speech-recognizer.py <name of word list>
 
 Example program output:
 
-Acetaldehyde
-Acetaldehyde oxime
-Acetic anhydride
-Acetone cyanohydrin
-Acetonitrile
-Allyl glycidyl ether
-Allyltrichlorosilane
-.....
+Acetaldehyde<br>
+Acetaldehyde oxime<br>
+Acetic anhydride<br>
+Acetone cyanohydrin<br>
+Acetonitrile<br>
+Allyl glycidyl ether<br>
+Allyltrichlorosilane<br>
+.....<br>
 
 Total number of words: 58
 Please review the word list<br>
