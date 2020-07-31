@@ -58,8 +58,12 @@ if (needInstructions):
    instruction(msg1 + msg2 + msg3 + msg4)
    needInstruction = False
 
-# List microphone present
-print("\nMicrophone(s) detected on this computer: {}".format(_microphone.list_microphone_names()))
+# Check for presence of microphone(s), need at least one to begin
+if (len(_microphone.list_microphone_names()) >=  1):
+   print("\nMicrophone(s) detected on this computer: {}".format(_microphone.list_microphone_names()))
+else:
+   print("No microphone detected ... exiting")
+   exit(12)
 
 # Get started
 
