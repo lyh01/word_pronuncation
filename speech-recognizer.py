@@ -7,8 +7,6 @@ _recognizer = sr.Recognizer()
 
 _microphone = sr.Microphone(sample_rate=_sampleRate, chunk_size=_sampleRate)
 
-words = ["glycogen", "sugar", "Tesla"]
-
 def getWordList():
    if sys.argv[1]:
       with open(sys.argv[1],"r") as input:
@@ -24,11 +22,11 @@ def instruction(msg):
 def record(word):
    """
 
-    Record each word save save as <word>.wav and <word>.txt
+    Record each word and save as <word>.wav and <word>.txt
 
    """
 
-   print("please pronounce: {} ".format(word))
+   print("\nPlease pronounce: {} ".format(word))
 
    with _microphone as source:
       #_audioData = _recognizer.listen(source, phrase_time_limit=1)
@@ -46,17 +44,26 @@ def record(word):
 
 words = []
 words = getWordList()
+for word in words:
+   print(word)
 
 needInstructions = True
 
-if needInstructions == True:
-   msg1 = "\n\nThere will be five seconds for each word"
-   msg2 = "\nThere will be {} words".format(len(words))
-   msg3 = "\nHere they are:\n"
-   instruction(msg1 + msg2 + msg3)
-   print(words)
-   instruction("\n\nPlease pronouce the word when presented")
+
+if (needInstructions):
+   msg1 = "\n\n\nTotal number of words: {}".format(len(words))
+   msg2 = "\nPlease review the word list"
+   msg3 = "\nThere will be five seconds for each word"
+   msg4 = "\nPlease pronounce the word when presented"
+   instruction(msg1 + msg2 + msg3 + msg4)
    needInstruction = False
+
+# List microphone present
+print("\nMicrophone(s) detected on this computer: {}".format(_microphone.list_microphone_names()))
+
+# Get started
+
+input("\nPress enter when ready to start ...")
 
 
 for word in words:
