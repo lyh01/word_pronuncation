@@ -50,7 +50,7 @@ words = getWordList()
 needInstructions = True
 
 if needInstructions == True:
-   msg1 = "\n\nThere will be two seconds for each word"
+   msg1 = "\n\nThere will be five seconds for each word"
    msg2 = "\nThere will be {} words".format(len(words))
    msg3 = "\nHere they are:\n"
    instruction(msg1 + msg2 + msg3)
