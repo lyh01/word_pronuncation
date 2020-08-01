@@ -6,7 +6,7 @@ To run the script: python ./speech-recognizer.py \<name of word list\>
 
 Example program output:
 
-Acetaldehyde<br>t
+Acetaldehyde<br>
 Acetaldehyde oxime<br>
 Acetic anhydride<br>
 Acetone cyanohydrin<br>
