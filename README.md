@@ -14,7 +14,7 @@ Allyl glycidyl ether<br>
 Allyltrichlorosilane<br>
 .....<br>
 
-Total number of words: 58
+Total number of words: 58<br>
 Please review the word list<br>
 There will be five seconds for each word<br>
 Please pronounce the word when presented
