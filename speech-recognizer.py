@@ -33,12 +33,12 @@ def record(word):
       _audioData = _recognizer.record(source, duration=5)
 
 
-   with open(word + ".wav", "wb") as _wavOut:
+   with open(word.lower() + ".wav", "wb") as _wavOut:
       _wavOut.write(_audioData.get_wav_data())
       _wavOut.close()
 
-   with open(word + ".txt", "w") as _wordOut:
-      _wordOut.write(word)
+   with open(word.lower() + ".txt", "w") as _wordOut:
+      _wordOut.write(word.lower())
       _wordOut.close()
 
 
